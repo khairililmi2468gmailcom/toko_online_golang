@@ -1,0 +1,13 @@
+- go mod init github.com/khairililmi2468gmailcom/toko_online_golang
+- go get github.com/gorilla/mux
+- go get gorm.io/gorm -> ORM library
+- go get gorm.io/driver/postgres ->untuk postgres sql 
+- go get github.com/joho/godotenv modul ->untuk membaca file .env yang bisa digunakan untuk konfig database
+- go get github.com/unrolled/render -> untuk merender view html, walaupun render ini support untuk banyak reaktif respond seperti json, xml dll.
+
+
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.22.6.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+atau 
+export PATH=$PATH:/usr/local/bin/go/bin
+go version
