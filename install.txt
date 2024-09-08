@@ -11,3 +11,6 @@ export PATH=$PATH:/usr/local/go/bin
 atau 
 export PATH=$PATH:/usr/local/bin/go/bin
 go version
+
+
+psql user switch: sudo -u postgres psql

@@ -1,14 +1,15 @@
-package app
+package controllers
 
 import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/khairililmi2468gmailcom/toko_online_golang/app/controllers"
 )
-func (server *Server) initializeRoutes(){
-   server.Router = mux.NewRouter()
-	server.Router.HandleFunc("/", controllers.Home).Methods("GET")
+
+func (server *Server) initializeRoutes() {
+	server.Router = mux.NewRouter()
+	server.Router.HandleFunc("/", server.Home).Methods("GET")
+	server.Router.HandleFunc("/produk", server.Produk).Methods("GET")
 
 	staticFileDirectory := http.Dir("./assets/")
 	staticFileHandler := http.StripPrefix("/public/", http.FileServer(staticFileDirectory))

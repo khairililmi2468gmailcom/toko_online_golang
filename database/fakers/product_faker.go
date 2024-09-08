@@ -7,12 +7,12 @@ import (
 	"time"
 
 	"github.com/gosimple/slug"
+	"github.com/khairililmi2468gmailcom/toko_online_golang/app/models"
 
 	"github.com/bxcodec/faker/v3"
 
 	"github.com/google/uuid"
 
-	"github.com/khairililmi2468gmailcom/toko_online_golang/app/models"
 	"github.com/shopspring/decimal"
 	"gorm.io/gorm"
 )
